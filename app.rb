@@ -7,3 +7,8 @@ get("/") do
   <p>Define some routes in app.rb</p>
   "
 end
+
+get("/process_roll") do
+  params.fetch("num_dice")
+  erb(:results)
+end
